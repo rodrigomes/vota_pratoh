@@ -11,4 +11,6 @@ class Cliente < ActiveRecord::Base
     :less_than => 100,
     :message => " - deve ser um número entre 0 e 100"
 
+  has_many :qualificacoes
+
 end
