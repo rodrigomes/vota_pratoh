@@ -12,4 +12,8 @@ class Qualificacao < ActiveRecord::Base
     :greater_than => 0,
     :message => " - deve ser um número maior que 0"
 
+  belongs_to :cliente
+  belongs_to :restaurante
+
+
 end
