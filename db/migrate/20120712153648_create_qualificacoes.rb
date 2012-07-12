@@ -7,5 +7,9 @@ class CreateQualificacoes < ActiveRecord::Migration
       t.float :valor_gasto
       t.timestamps
     end
+    
+    add_index(:qualificacoes, :cliente_id)
+    add_index(:qualificacoes, :restaurante_id)
+
   end
 end
