@@ -6,5 +6,7 @@ class CreatePratosRestaurantesJoinTable < ActiveRecord::Migration
   end
 
   def down
+    drop_table :pratos_restaurantes
+  end
   end
 end
